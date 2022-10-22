@@ -138,7 +138,7 @@ li {
 #tvScreen {
   position:absolute;
   z-index:-1;
-  left:5rem;
+  left:4rem;
   width: 70rem;
 }
 .background-off {
