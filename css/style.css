@@ -91,7 +91,6 @@ li {
 #powerBtn {
   width:6.5rem;
   height:4.5rem;
-  background:red;
   left:8rem;
   top: 0.5rem;
 }
@@ -119,7 +118,7 @@ li {
 #chanUpBtn {
   width:6.5rem;
   height:6.5rem;
-  background:rgb(0, 255, 98);
+ 
   left:8rem;
   top: 14.3rem;
 }
