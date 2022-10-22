@@ -31,10 +31,7 @@ ul {
   border: 0.5rem solid black;
   display: inline-block;
 }
-.remote-button {
-  position:absolute;
-  display:inline-block;
-}
+
 
 
 /******************************************
@@ -61,12 +58,9 @@ li {
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
-.foo {
-  position:absolute;
-  z-index:-1;
-  left:5rem;
-  width: 70rem;
-}
+
+
+
 #tv {
   position:relative;
   max-width: 95rem;
@@ -81,61 +75,58 @@ li {
   margin:0 auto;
 
 }
-#tvChangeBtn {
+/******************************************
+/* Remote Buttons
+/*******************************************/
+
+/* Remote button layout */
+.remote-btn-small,
+.remote-btn-big {
+  position:absolute;
+  display:inline-block;
   width:6.5rem;
   height:4.5rem;
-  background:rgb(26, 255, 0);
+}
+
+.remote-btn-big {
+  height:6.5rem;
+}
+
+
+/* Remote button position */
+#tvChangeBtn {
   left:0.2rem;
   top: 0.5rem;
 }
 #powerBtn {
-  width:6.5rem;
-  height:4.5rem;
   left:8rem;
   top: 0.5rem;
 }
 #muteBtn {
-  width:6.5rem;
-  height:4.5rem;
-  background:rgb(34, 0, 255);
   left:0.2rem;
   top: 7.3rem;
 }
 #avBtn {
-  width:6.5rem;
-  height:4.5rem;
-  background:rgb(255, 0, 204);
   left:8rem;
   top: 7.3rem;
 }
 #volUpBtn {
-  width:6.5rem;
-  height:6.5rem;
-  background:rgb(0, 255, 204);
   left:0.2rem;
   top: 14.3rem;
 }
 #chanUpBtn {
-  width:6.5rem;
-  height:6.5rem;
- 
   left:8rem;
   top: 14.3rem;
 }
 #volDownBtn {
-  width:6.5rem;
-  height:6.5rem;
-  background:rgb(0, 255, 98);
   left:0.2rem;
   top: 23.3rem;
 }
 #chanDownBtn {
-  width:6.5rem;
-  height:6.5rem;
-  background:rgb(0, 255, 98);
   left:8rem;
   top: 23.3rem;
 }
+
 #tvStatic {
   position: absolute;
   z-index:-1;
@@ -165,7 +156,9 @@ li {
 /******************************************
 /* MediaQueries
 /*******************************************/
-
+video::-webkit-media-controls {
+  display: none;
+}
 /* Tv image responsive */
 @media screen and (max-width:949px) {
   .img-tv {
