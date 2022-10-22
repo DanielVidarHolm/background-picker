@@ -1,0 +1,185 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* Base Layout
+/*******************************************/
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+body {
+  background: rgb(204, 204, 204);
+}
+h1,h2 {
+  padding:2rem 0;
+  font-weight: 700;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3rem;
+}
+ul {
+  border: 0.5rem solid black;
+  display: inline-block;
+}
+.remote-button {
+  position:absolute;
+  display:inline-block;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+section {
+  text-align:center;
+}
+li {
+
+  width: 10rem;
+  height: 10rem;
+}
+.img-tv {
+  width: 95rem;
+  height:70rem;
+}
+.img-remote {
+  width:15rem;
+  height:30rem;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.foo {
+  position:absolute;
+  z-index:-1;
+  left:5rem;
+  width: 70rem;
+}
+#tv {
+  position:relative;
+  max-width: 95rem;
+  max-height: 70rem;
+  margin:0 auto;
+  
+}
+.remote-container {
+  position:relative;
+  width: 15rem;
+  height: 30rem;
+  margin:0 auto;
+
+}
+#tvChangeBtn {
+  width:6.5rem;
+  height:4.5rem;
+  background:rgb(26, 255, 0);
+  left:0.2rem;
+  top: 0.5rem;
+}
+#powerBtn {
+  width:6.5rem;
+  height:4.5rem;
+  background:red;
+  left:8rem;
+  top: 0.5rem;
+}
+#muteBtn {
+  width:6.5rem;
+  height:4.5rem;
+  background:rgb(34, 0, 255);
+  left:0.2rem;
+  top: 7.3rem;
+}
+#avBtn {
+  width:6.5rem;
+  height:4.5rem;
+  background:rgb(255, 0, 204);
+  left:8rem;
+  top: 7.3rem;
+}
+#volUpBtn {
+  width:6.5rem;
+  height:6.5rem;
+  background:rgb(0, 255, 204);
+  left:0.2rem;
+  top: 14.3rem;
+}
+#chanUpBtn {
+  width:6.5rem;
+  height:6.5rem;
+  background:rgb(0, 255, 98);
+  left:8rem;
+  top: 14.3rem;
+}
+#volDownBtn {
+  width:6.5rem;
+  height:6.5rem;
+  background:rgb(0, 255, 98);
+  left:0.2rem;
+  top: 23.3rem;
+}
+#chanDownBtn {
+  width:6.5rem;
+  height:6.5rem;
+  background:rgb(0, 255, 98);
+  left:8rem;
+  top: 23.3rem;
+}
+#tvStatic {
+  position: absolute;
+  z-index:-1;
+  width:70rem;
+  height:50rem;
+  top:5rem;
+  left: 3rem;
+}
+#tvScreen {
+  position:absolute;
+  z-index:-1;
+  left:5rem;
+  width: 70rem;
+}
+.background-off {
+  background:black;
+}
+.background-static{
+  background:url("../img/tv-static.gif")
+}
+.background-none{
+  background:none;
+}
+.displayNone {
+  display:none;
+}
+/******************************************
+/* MediaQueries
+/*******************************************/
+
+/* Tv image responsive */
+@media screen and (max-width:949px) {
+  .img-tv {
+    width: 70rem;
+    height:50rem;;
+  }
+  #tv {
+    width:70rem;
+    height: 50rem;
+  }
+}
+
+/* for mobile */
+@media screen and (max-width:600px) {
+  
+}
