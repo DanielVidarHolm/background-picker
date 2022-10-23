@@ -20,7 +20,8 @@ document.querySelector('#powerBtn').addEventListener('click', togglePower);
 document.querySelector('#chanUpBtn').addEventListener('click', nextChannel);
 document.querySelector('#chanDownBtn').addEventListener('click', prevChannel);
 document.querySelector('#muteBtn').addEventListener('click' , toggleMute);
-
+document.querySelector('#volUpBtn').addEventListener('click', volumeUp);
+document.querySelector('#volDownBtn').addEventListener('click', volumeDown);
 
 function togglePower() {
     isOn = (isOn) ? false : true;
@@ -40,7 +41,16 @@ function toggleMute() {
 
 
 
-
+function volumeUp () {
+    if(tvScreen.volume !== 1) {
+        tvScreen.volume = tvScreen.volume + 0.1;
+    }
+}
+function volumeDown () {
+    if(tvScreen.volume > 0.01 ) {
+        tvScreen.volume = tvScreen.volume - 0.1;
+    }
+}
 function nextChannel() {
     if (isOn) {
         clearScreen()
